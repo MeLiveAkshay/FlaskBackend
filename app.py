@@ -10,10 +10,10 @@ def home():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
-
+    return render_template('index.html',name="Akshay")
 @app.route('/about')
 def about():
-    return 'About Page'
+    return render_template('about.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
